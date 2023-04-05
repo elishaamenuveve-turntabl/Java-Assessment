@@ -24,6 +24,8 @@ public class BuildRequestTest {
     @Mock
     Machine newMachine;
 
+    Machine
+
     @Mock
     AuthorisingService authorisingService;
     @Mock
