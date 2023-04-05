@@ -22,16 +22,16 @@ public interface VirtualMachineRequestor {
     /**
      * Checks user's entitlements, and if appropriate
      * creates a new request for a virtual machine build.
-     * @param machine to be created, including hostname
-     * and requestor fields
+     *
+     * @param machine  to be created, including hostname
+     *                 and requestor fields
      * @param username of requestor
-     * @throws UserNotEntitledException thrown
-     * when a user is not entitled to make a request
+     * @throws UserNotEntitledException   thrown
+     *                                    when a user is not entitled to make a request
      * @throws MachineNotCreatedException thrown
-     * when a machine build is not successful
+     *                                    when a machine build is not successful
      */
-    void createNewRequest(Machine machine)
-            throws UserNotEntitledException, MachineNotCreatedException;
+    void createNewRequest(Machine machine) throws UserNotEntitledException, MachineNotCreatedException;
 
     /**
      * Reports on the number of successful Windows
@@ -50,3 +50,4 @@ public interface VirtualMachineRequestor {
      * @return The total number of failed builds for today
      */
     int totalFailedBuildsForDay();
+}

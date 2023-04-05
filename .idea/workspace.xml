@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca66cea8-32be-4948-828e-36b3bcb2b3e4" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/auth/AuthorisingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/build/SystemBuildService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/VirtualMachineRequestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/exception/MachineNotCreatedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/exception/UserNotEntitledException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/machine/Desktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/machine/Machine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/machine/Server.java" afterDir="false" />
+    <list default="true" id="ca66cea8-32be-4948-828e-36b3bcb2b3e4" name="Changes" comment="created the basic implementation structures">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/MachineRequestor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/request/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vmorg/buildrequest/BuildRequestTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM_UML.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/VM_UML.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/VirtualMachineRequestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/VirtualMachineRequestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vmorg/machine/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/machine/Machine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +51,29 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="BuildRequestTest.vmCreatedUserNotEntitled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vmorg.buildrequest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vmorg.buildrequest" />
+      <option name="MAIN_CLASS_NAME" value="com.vmorg.buildrequest.BuildRequestTest" />
+      <option name="METHOD_NAME" value="vmCreatedUserNotEntitled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BuildRequestTest.vmCreatedUserNotEntitled" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,11 +90,19 @@
       <option name="project" value="LOCAL" />
       <updated>1680704239293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created the basic implementation structures">
+      <created>1680705872867</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680705872867</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="created the basic implementation structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="created the basic implementation structures" />
   </component>
 </project>
