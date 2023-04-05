@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca66cea8-32be-4948-828e-36b3bcb2b3e4" name="Changes" comment="created the basic implementation structures">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/MachineRequestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/request/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/vmorg/buildrequest/BuildRequestTest.java" afterDir="false" />
+    <list default="true" id="ca66cea8-32be-4948-828e-36b3bcb2b3e4" name="Changes" comment="wrote the test for vmCreatedUserNotEntitled and made the necessary implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/VirtualMachineRequestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/VirtualMachineRequestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vmorg/machine/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/machine/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM_UML.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/VM_UML.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/MachineRequestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/MachineRequestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vmorg/buildrequest/BuildRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vmorg/buildrequest/BuildRequestTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,54 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BuildRequestTest">
+    <configuration name="BuildRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vmorg.buildrequest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vmorg.buildrequest" />
+      <option name="MAIN_CLASS_NAME" value="com.vmorg.buildrequest.BuildRequestTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuildRequestTest.requestorDoesNotThrowsExceptionWhenUserIsEntitled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vmorg.buildrequest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vmorg.buildrequest" />
+      <option name="MAIN_CLASS_NAME" value="com.vmorg.buildrequest.BuildRequestTest" />
+      <option name="METHOD_NAME" value="requestorDoesNotThrowsExceptionWhenUserIsEntitled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuildRequestTest.vmCreateNewRequestUserIsNotEntitled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vmorg.buildrequest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vmorg.buildrequest" />
+      <option name="MAIN_CLASS_NAME" value="com.vmorg.buildrequest.BuildRequestTest" />
+      <option name="METHOD_NAME" value="vmCreateNewRequestUserIsNotEntitled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BuildRequestTest.vmCreatedUserNotEntitled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAssessment" />
       <extension name="coverage">
@@ -70,6 +115,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BuildRequestTest" />
+        <item itemvalue="JUnit.BuildRequestTest.requestorDoesNotThrowsExceptionWhenUserIsEntitled" />
+        <item itemvalue="JUnit.BuildRequestTest.vmCreateNewRequestUserIsNotEntitled" />
         <item itemvalue="JUnit.BuildRequestTest.vmCreatedUserNotEntitled" />
       </list>
     </recent_temporary>
@@ -97,12 +145,20 @@
       <option name="project" value="LOCAL" />
       <updated>1680705872867</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="wrote the test for vmCreatedUserNotEntitled and made the necessary implementation">
+      <created>1680708452516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680708452516</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="created the basic implementation structures" />
-    <option name="LAST_COMMIT_MESSAGE" value="created the basic implementation structures" />
+    <MESSAGE value="wrote the test for vmCreatedUserNotEntitled and made the necessary implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="wrote the test for vmCreatedUserNotEntitled and made the necessary implementation" />
   </component>
 </project>
