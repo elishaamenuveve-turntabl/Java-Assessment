@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca66cea8-32be-4948-828e-36b3bcb2b3e4" name="Changes" comment="wrote the test for vmCreatedUserNotEntitled and made the necessary implementation">
+    <list default="true" id="ca66cea8-32be-4948-828e-36b3bcb2b3e4" name="Changes" comment="implemented update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM_UML.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/VM_UML.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/MachineRequestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vmorg/buildrequest/MachineRequestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vmorg/buildrequest/BuildRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vmorg/buildrequest/BuildRequestTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +150,29 @@
       <option name="project" value="LOCAL" />
       <updated>1680708452516</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented create total builds log">
+      <created>1680712140342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680712140342</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implemented update">
+      <created>1680712489362</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680712489362</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="created the basic implementation structures" />
     <MESSAGE value="wrote the test for vmCreatedUserNotEntitled and made the necessary implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrote the test for vmCreatedUserNotEntitled and made the necessary implementation" />
+    <MESSAGE value="implemented create total builds log" />
+    <MESSAGE value="implemented update" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented update" />
   </component>
 </project>

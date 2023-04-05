@@ -4,7 +4,9 @@ import com.vmorg.auth.AuthorisingService;
 import com.vmorg.build.SystemBuildService;
 import com.vmorg.exception.MachineNotCreatedException;
 import com.vmorg.exception.UserNotEntitledException;
+import com.vmorg.machine.Desktop;
 import com.vmorg.machine.Machine;
+import com.vmorg.machine.Server;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,14 +49,20 @@ public class MachineRequestor implements VirtualMachineRequestor{
 
     @Override
     public void createNewRequest(Machine machine) throws UserNotEntitledException, MachineNotCreatedException {
+        String machineType = "";
+        if (machine.getClass().isInstance(Desktop.class)) {
+            machineType = "Windows";
+        } else if (machine.getClass().isInstance(Server.class)) {
+            machineType = "Windows";
+        }
         if (authorisingService.isAuthorised(username)) {
            String hostname = systemBuildService.createNewMachine(machine);
            if (Objects.equals(hostname, "")) {
                MachineRequestor.totalFailedBuildsForToday ++;
                throw new MachineNotCreatedException();
            } else {
-               totalBuildsToday.putIfAbsent(machine.getClass().getSimpleName(), 0);
-               totalBuildsToday.put(machine.getClass().getSimpleName(), 1);
+               totalBuildsToday.putIfAbsent(machineType, 0);
+               totalBuildsToday.put(machineType, 1);
                totalBuildsByUserForToday.put(username, totalBuildsToday);
                collectionOfMachinesBuiltToday.add(machine);
                MachineRequestor.collectionOfMachinesBuiltToday.add(machine);
@@ -62,7 +70,7 @@ public class MachineRequestor implements VirtualMachineRequestor{
         } else {
             throw new UserNotEntitledException();
         }
-
+//gfgh
 
     }
 
